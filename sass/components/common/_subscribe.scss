@@ -1,50 +1,47 @@
-.subscribe__form {
-  display: flex;
-  align-items: flex-end;
-}
+.subscribe {
+  &__form {
+    @include centeredFlex($cross-axis: flex-end);
+  }
 
-.subscribe__label {
-  display: block;
-  margin-bottom: 20px;
+  &__label {
+    display: block;
+    margin-bottom: 20px;
 
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
 
-  color: var(--primary-bg-white-color);
-}
+    color: $primary-bg-white-color;
+  }
 
-.subscribe__input {
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
-  padding-left: 16px;
-  padding-right: 16px;
+  &__input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  color: var(--primary-bg-white-color);
-  background-color: transparent;
-  transition: box-shadow var(--transition-duration) var(--timing-function);
-}
+    color: $primary-bg-white-color;
+    background-color: transparent;
+    transition: box-shadow $timing $function;
 
-.subscribe__input:placeholder-shown {
-  font-size: 16px;
-  line-height: 1.25;
+    &:placeholder-shown {
+      font-size: 16px;
+      line-height: 1.25;
+      color: $contacts-text-color;
+    }
+  }
 
-  color: var(--contacts-text-color);
-}
+  &__btn {
+    @extend %btn;
+    @include centeredFlex();
+  }
 
-.subscribe__btn {
-  @extend %btn;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.subscribe__icon {
-  margin-left: 10px;
+  &__icon {
+    margin-left: 10px;
+  }
 }

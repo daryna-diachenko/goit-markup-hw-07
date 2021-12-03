@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
@@ -12,7 +12,7 @@
   --border-color: #afb1b8;
   --transition-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* body {
   font-family: Roboto, sans-serif;
@@ -44,11 +44,11 @@ ul {
   list-style: none;
 } */
 
-.link {
+/* .link {
   font-style: normal;
   text-decoration: none;
   color: inherit;
-}
+} */
 
 /* .container {
   width: 1200px;
@@ -68,12 +68,12 @@ ul {
   overflow: hidden;
 } */
 
-.title {
+/* .title {
   font-weight: 700;
   color: var(--secondary-text-color);
-}
+} */
 
-.btn {
+/* .btn {
   min-width: 200px;
   height: 50px;
 
@@ -98,7 +98,7 @@ ul {
 .btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: var(--accent-hover-color);
-}
+} */
 
 /* -------------Стили главной страницы-------------*/
 

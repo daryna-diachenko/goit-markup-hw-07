@@ -1,12 +1,6 @@
-%link {
-  font-style: normal;
-  text-decoration: none;
-  color: inherit;
-}
-
 %title {
   font-weight: 700;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 %btn {
@@ -23,14 +17,13 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  color: var(--primary-bg-white-color);
-  background-color: var(--accent-color);
+  color: $primary-bg-white-color;
+  background-color: $accent-color;
 
-  transition: box-shadow var(--transition-duration) var(--timing-function),
-    background-color var(--transition-duration) var(--timing-function);
+  transition: box-shadow $timing $function, background-color $timing $function;
 }
 
 %btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: var(--accent-hover-color);
+  background-color: $accent-color-hovered;
 }

@@ -1,34 +1,30 @@
 .clients {
   display: flex;
-  margin-right: calc(-1 * var(--card-gap));
-}
+  margin-right: calc(-1 * $card-gap);
 
-.clients__item {
-  margin-right: var(--card-gap);
-}
+  &__item {
+    margin-right: $card-gap;
+  }
 
-.clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__link {
+    @include centeredFlex();
+    width: 170px;
+    height: 92px;
 
-  width: 170px;
-  height: 92px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
 
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
+    color: $border-color;
+    transition: color $timing $function, border-color $timing $function;
 
-  color: var(--border-color);
-  transition: color var(--transition-duration) var(--timing-function),
-    border-color var(--transition-duration) var(--timing-function);
-}
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      color: $accent-color;
+    }
+  }
 
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-}
-
-.clients__icon {
-  fill: currentColor;
+  &__icon {
+    fill: currentColor;
+  }
 }
