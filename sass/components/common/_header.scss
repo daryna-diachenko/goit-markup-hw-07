@@ -8,10 +8,6 @@
 
   &__nav {
     @include centeredFlex();
-
-    & .link {
-      color: $nav-text-color;
-    }
   }
 
   &__list {
@@ -28,17 +24,17 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: $secondary-text-color;
+    color: $nav-text-color;
     transition: color $timing $function;
 
     &:hover,
-    &:focus,
-    &--current {
+    &:focus {
       color: $accent-color;
     }
 
     &--current {
       position: relative;
+      color: $accent-color;
     }
 
     &--current::after {

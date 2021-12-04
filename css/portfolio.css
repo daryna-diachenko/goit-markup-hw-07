@@ -52,7 +52,7 @@ ul {
   overflow: hidden;
 }
 
-.product__title {
+.section__title, .section__item-title, .product__name {
   font-weight: 700;
   color: #212121;
 }
@@ -106,10 +106,6 @@ ul {
           align-items: center;
 }
 
-.header__nav .link {
-  color: #000000;
-}
-
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,17 +120,18 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: #000000;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__link:hover, .header__link:focus, .header__link--current {
+.header__link:hover, .header__link:focus {
   color: #2196f3;
 }
 
 .header__link--current {
   position: relative;
+  color: #2196f3;
 }
 
 .header__link--current::after {
@@ -219,10 +216,92 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  color: #000000;
 }
 
 .logo__accent {
   color: #2196f3;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--no-top-padding {
+  padding-top: 0;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section__item {
+  position: relative;
+}
+
+.section__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section__item-title {
+  margin-bottom: 10px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section__item-text {
+  line-height: 1.71;
+}
+
+.section__thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.section__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.section__label-text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .filter {
@@ -261,6 +340,7 @@ ul {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
+  background-color: #2196f3;
 }
 
 .card-set {
@@ -269,13 +349,13 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: calc(-1 * $card-gap);
-  margin-bottom: calc(-1 * $card-gap);
+  margin-right: calc(-1 * 30px);
+  margin-bottom: calc(-1 * 30px);
 }
 
 .card-set__item {
-  -ms-flex-preferred-size: calc(100% / 3 - $card-gap);
-      flex-basis: calc(100% / 3 - $card-gap);
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -329,14 +409,14 @@ ul {
   border-top: none;
 }
 
-.product__title {
+.product__name {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.product__name {
+.product__cat {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
@@ -368,6 +448,7 @@ ul {
 .footer__logo {
   display: block;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .footer__item:not(:last-child) {
@@ -501,7 +582,25 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe__input:placeholder-shown {
+.subscribe__input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe__input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe__input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);

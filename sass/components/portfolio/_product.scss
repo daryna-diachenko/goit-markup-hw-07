@@ -1,11 +1,11 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * $card-gap);
-  margin-bottom: calc(-1 * $card-gap);
+  margin-right: calc(-1 * #{$card-gap});
+  margin-bottom: calc(-1 * #{$card-gap});
 
   &__item {
-    flex-basis: calc(100% / 3 - $card-gap);
+    flex-basis: calc(100% / 3 - #{$card-gap});
     margin-right: $card-gap;
     margin-bottom: $card-gap;
   }
@@ -57,7 +57,7 @@
     border-top: none;
   }
 
-  &__title {
+  &__name {
     @extend %title;
     margin-bottom: 4px;
     font-size: 18px;
@@ -65,7 +65,7 @@
     letter-spacing: 0.06em;
   }
 
-  &__name {
+  &__cat {
     font-size: 16px;
     line-height: 1.87;
     color: $primary-text-color;
