@@ -18,54 +18,51 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
-    <header class="header">
-      <div class="header__main-nav container">
+    <header class="page-header">
+      <div class="container page-header__container">
         <!------------------------- Навигация --------------------->
 
-        <nav class="header__nav">
-          <a class="link logo" href="./index.html" lang="en"
+        <nav class="site-nav">
+          <a class="logo" href="./index.html" lang="en"
             ><span class="logo__accent">Web</span>Studio</a
           >
 
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="link header__link" href="./index.html">Студия</a>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
-            <li class="header__item">
+            <li class="site-nav__item">
               <a
-                class="link header__link header__link--current"
+                class="site-nav__link site-nav__link--current"
                 href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="header__item">
-              <a class="link header__link" href="#footer">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#footer">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <!--------------------------- Контакты ---------------------->
 
-        <ul class="header__contacts">
-          <li class="header__contacts-item header__contacts-item--hovered">
-            <a
-              class="link header__contacts-link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="header__icon" width="16" height="12">
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="header__contacts-item header__contacts-item--hovered">
-            <a class="link header__contacts-link" href="tel:+380961111111">
-              <svg class="header__icon" width="10" height="16">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -78,7 +75,7 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="section-title visually-hidden">Наши роботы</h1>
+          <h1 class="section__title section__title--hidden">Наши роботы</h1>
           <ul class="filter">
             <li class="filter__item">
               <button class="filter__btn" type="button">Все</button>
@@ -100,7 +97,7 @@
           <ul class="card-set">
             <li class="card-set__item">
               <article class="product">
-                <a class="link product__link" href="">
+                <a class="product__link" href="">
                   <div class="product__overlay">
                     <img
                       src="./images/project-1-technokriak-website.jpg"
@@ -117,8 +114,8 @@
                   </div>
 
                   <div class="product__meta">
-                    <h2 class="product__name">Технокряк</h2>
-                    <p class="product__cat">Веб-сайт</p>
+                    <h2 class="product__title">Технокряк</h2>
+                    <p class="product__description">Веб-сайт</p>
                   </div>
                 </a>
               </article>
@@ -126,7 +123,7 @@
 
             <li class="card-set__item">
               <article class="product">
-                <a class="link product__link" href="">
+                <a class="product__link" href="">
                   <div class="product__overlay">
                     <img
                       src="./images/project-2-poster-design.jpg"
@@ -143,10 +140,10 @@
                   </div>
 
                   <div class="product__meta">
-                    <h2 class="product__name">
+                    <h2 class="product__title">
                       Постер <span lang="en">New Orlean vs Golden Star</span>
                     </h2>
-                    <p class="product__cat">Дизайн</p>
+                    <p class="product__description">Дизайн</p>
                   </div>
                 </a>
               </article>
@@ -154,7 +151,7 @@
 
             <li class="card-set__item">
               <article class="product">
-                <a class="link product__link" href="">
+                <a class="product__link" href="">
                   <div class="product__overlay">
                     <img
                       src="./images/project-3-seafood-restaurant-app.jpg"
@@ -171,10 +168,10 @@
                   </div>
 
                   <div class="product__meta">
-                    <h2 class="product__name">
+                    <h2 class="product__title">
                       Ресторан <span lang="en">Seafood</span>
                     </h2>
-                    <p class="product__cat">Приложение</p>
+                    <p class="product__description">Приложение</p>
                   </div>
                 </a>
               </article>
@@ -182,7 +179,7 @@
 
             <li class="card-set__item">
               <article class="product">
-                <a class="link product__link" href="">
+                <a class="product__link" href="">
                   <div class="product__overlay">
                     <img
                       src="./images/project-4-prime-project.jpg"
@@ -199,10 +196,10 @@
                   </div>
 
                   <div class="product__meta">
-                    <h2 class="product__name">
+                    <h2 class="product__title">
                       Проект <span lang="en">Prime</span>
                     </h2>
-                    <p class="product__cat">Маркетинг</p>
+                    <p class="product__description">Маркетинг</p>
                   </div>
                 </a>
               </article>
@@ -210,7 +207,7 @@
 
             <li class="card-set__item">
               <article class="product">
-                <a class="link product__link" href="">
+                <a class="product__link" href="">
                   <div class="product__overlay">
                     <img
                       src="./images/project-5-boxes-project.jpg"
@@ -227,10 +224,10 @@
                   </div>
 
                   <div class="product__meta">
-                    <h2 class="product__name">
+                    <h2 class="product__title">
                       Проект <span lang="en">Boxes</span>
                     </h2>
-                    <p class="product__cat">Приложение</p>
+                    <p class="product__description">Приложение</p>
                   </div>
                 </a>
               </article>
@@ -238,7 +235,7 @@
 
             <li class="card-set__item">
               <article class="product">
-                <a class="link product__link" href="">
+                <a class="product__link" href="">
                   <div class="product__overlay">
                     <img
                       src="./images/project-6-inspiration-website.jpg"
@@ -255,10 +252,10 @@
                   </div>
 
                   <div class="product__meta">
-                    <h2 class="product__name" lang="en">
+                    <h2 class="product__title" lang="en">
                       Inspiration has no Borders
                     </h2>
-                    <p class="product__cat">Веб-сайт</p>
+                    <p class="product__description">Веб-сайт</p>
                   </div>
                 </a>
               </article>
@@ -266,7 +263,7 @@
 
             <li class="card-set__item">
               <article class="product">
-                <a class="link product__link" href="">
+                <a class="product__link" href="">
                   <div class="product__overlay">
                     <img
                       src="./images/project-7-edition-design.jpg"
@@ -283,10 +280,10 @@
                   </div>
 
                   <div class="product__meta">
-                    <h2 class="product__name">
+                    <h2 class="product__title">
                       Издание <span lang="en">Limited Edition</span>
                     </h2>
-                    <p class="product__cat">Дизайн</p>
+                    <p class="product__description">Дизайн</p>
                   </div>
                 </a>
               </article>
@@ -294,7 +291,7 @@
 
             <li class="card-set__item">
               <article class="product">
-                <a class="link product__link" href="">
+                <a class="product__link" href="">
                   <div class="product__overlay">
                     <img
                       src="./images/project-8-lab-project.jpg"
@@ -311,10 +308,10 @@
                   </div>
 
                   <div class="product__meta">
-                    <h2 class="product__name">
+                    <h2 class="product__title">
                       Проект <span lang="en">LAB</span>
                     </h2>
-                    <p class="product__cat">Маркетинг</p>
+                    <p class="product__description">Маркетинг</p>
                   </div>
                 </a>
               </article>
@@ -322,7 +319,7 @@
 
             <li class="card-set__item">
               <article class="product">
-                <a class="link product__link" href="">
+                <a class="product__link" href="">
                   <div class="product__overlay">
                     <img
                       src="./images/project-9-business-app.jpg"
@@ -339,8 +336,8 @@
                   </div>
 
                   <div class="product__meta">
-                    <h2 class="product__name" lang="en">Growing Business</h2>
-                    <p class="project__cat">Приложение</p>
+                    <h2 class="product__title" lang="en">Growing Business</h2>
+                    <p class="product__description">Приложение</p>
                   </div>
                 </a>
               </article>
@@ -352,29 +349,29 @@
 
     <footer class="footer" id="footer">
       <div class="container footer__container">
-        <div class="footer__contact-info">
-          <a class="link logo footer__logo" href="./index.html" lang="en">
+        <div class="footer__contacts">
+          <a class="logo footer__logo" href="./index.html" lang="en">
             <span class="logo__accent">Web</span>Studio
           </a>
-          <address class="footer__contacts">
-            <ul class="footer__list">
-              <li class="footer__item">
+          <address class="address">
+            <a
+              class="address__link"
+              href="https://goo.gl/maps/6j3VHneAAfYVpwDq5"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              г. Киев, пр-т Леси Украинки,26
+            </a>
+            <ul class="footer-contacts">
+              <li class="footer-contacts__item">
                 <a
-                  class="link footer__address"
-                  href="https://goo.gl/maps/6j3VHneAAfYVpwDq5"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  г. Киев, пр-т Леси Украинки,26
-                </a>
-              </li>
-              <li class="footer__item">
-                <a class="link footer__link" href="mailto:info@devstudio.com"
+                  class="footer-contacts__link"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com
                 </a>
               </li>
-              <li class="footer__item">
-                <a class="link footer__link" href="tel:+380961111111"
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -387,7 +384,10 @@
 
           <ul class="social">
             <li class="social__item">
-              <a class="social__link" href="https://www.instagram.com/">
+              <a
+                class="social__link social__link--color-reverse"
+                href="https://www.instagram.com/"
+              >
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
@@ -395,7 +395,7 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link" href="https://twitter.com/">
+              <a class="social__link social__link--color-reverse" href="https://twitter.com/">
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
@@ -403,7 +403,7 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/">
+              <a class="social__link social__link--color-reverse" href="https://www.facebook.com/">
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
@@ -411,7 +411,7 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link" href="https://www.linkedin.com/">
+              <a class="social__link social__link--color-reverse" href="https://www.linkedin.com/">
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -420,21 +420,26 @@
           </ul>
         </div>
 
-        <div class="subscribe">
-          <form class="subscribe__form" action="#" autocomplete="on">
-            <label class="subscribe__field">
-              <span class="subscribe__label">Подпишитесь на рассылку</span>
+        <div class="footer__subscription">
+          <p class="footer__text">Подпишитесь на рассылку</p>
+          <form
+            class="subscription__form"
+            action="#"
+            autocomplete="off"
+            method="POST"
+          >
+            <label class="subscription__field">
               <input
-                class="subscribe__input"
+                class="subscription__input"
                 type="email"
                 name="email"
                 placeholder="E-mail"
               />
             </label>
 
-            <button class="subscribe__btn" type="submit">
+            <button class="subscription__btn" type="submit">
               Подписаться
-              <svg class="subscribe__icon" width="24" height="24">
+              <svg class="subscription__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

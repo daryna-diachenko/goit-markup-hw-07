@@ -1,32 +1,34 @@
 .filter {
   @include centeredFlex();
   margin-bottom: 50px;
+}
 
-  &__item:not(:last-child) {
+.filter__item {
+  &:not(:last-child) {
     margin-right: 8px;
   }
+}
 
-  &__btn {
-    @extend %btn;
-    min-width: 73px;
-    height: 38px;
-    padding: 6px 22px;
+.filter__btn {
+  @extend %btn;
+  min-width: 73px;
+  height: 38px;
+  padding: 6px 22px;
 
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 
-    color: $secondary-text-color;
-    background-color: $secondary-bg-color;
-    transition: box-shadow $timing $function, color $timing $function,
-      background-color $timing $function;
+  color: $secondary-text-color;
+  background-color: $secondary-bg-color;
+  transition: box-shadow $timing $function, color $timing $function,
+    background-color $timing $function;
 
-    &:hover,
-    &:focus {
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-      color: $primary-bg-white-color;
-      background-color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: $primary-bg-white-color;
+    background-color: $accent-color;
   }
 }

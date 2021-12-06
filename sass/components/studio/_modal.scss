@@ -30,185 +30,171 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: $primary-bg-white-color;
-
-  .backdrop--is-hidden & {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
-
-  &__btn {
-    @include centeredFlex();
-
-    position: absolute;
-    top: 8px;
-    right: 8px;
-
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-
-    color: $nav-text-color;
-    background-color: $primary-bg-white-color;
-    transition: color $timing $function;
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-  }
-
-  &__icon {
-    fill: currentColor;
-  }
-
-  &__title {
-    @extend %title;
-    margin-bottom: 12px;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-  }
 }
-.form {
-  text-align: center;
 
-  &__field {
-    display: block;
-    // position: relative;
-    margin-bottom: 10px;
+.backdrop--is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
 
-    &:nth-of-type(4) {
-      margin-bottom: 20px;
-    }
+.modal__btn {
+  @include centeredFlex();
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-    &:last-of-type {
-      margin-bottom: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 
-  &__label {
-    display: block;
-    margin-bottom: 4px;
+  color: $nav-text-color;
+  background-color: $primary-bg-white-color;
+  transition: color $timing $function;
 
-    text-align: left;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-
-    color: $primary-text-color;
-  }
-
-  &__wrap {
-    position: relative;
-  }
-
-  &__input {
-    width: 100%;
-    height: 40px;
-    padding-right: 16px;
-    padding-left: 42px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    background-color: transparent;
-
-    transition: border-color $timing $function;
-
-    &:focus {
-      border-color: $accent-color;
-      outline: none;
-    }
-  }
-
-  &__icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    fill: $secondary-text-color;
-
-    .form__input:focus + & {
-      fill: $accent-color;
-      transition: fill $timing $function;
-    }
-  }
-
-  &__textarea {
-    resize: none;
-    display: block;
-    width: 100%;
-    height: 120px;
-    padding: 12px 16px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-
-    transition: border $timing $function;
-
-    &:focus {
-      border-color: $accent-color;
-      outline: none;
-    }
-    &::placeholder {
-      line-height: 1.14;
-      letter-spacing: 0.01em;
-
-      color: rgba(117, 117, 117, 0.5);
-    }
-  }
-
-  &__checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
-  &__check-icon {
-    order: -1;
-    display: inline-block;
-    margin-right: 7px;
-    border: 2px solid #2a2a2a;
-    border-radius: 2px;
-    transition: border-color $timing $function,
-      background-color $timing $function;
-
-    .form__field:last-of-type:focus-within & {
-      border-color: $accent-color;
-    }
-
-    .form__checkbox:checked + & {
-      background-color: $accent-color;
-      background-origin: border-box;
-      border: none;
-    }
-  }
-
-  &__text {
-    line-height: 1.71;
-    color: $primary-text-color;
-  }
-
-  &__link {
-    text-decoration-skip-ink: none;
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
+}
 
-  &__btn {
-    @extend %btn;
-    display: block;
-    margin: 0 auto;
+.modal__icon {
+  fill: currentColor;
+}
 
-    &:hover,
-    &:focus {
-      @extend %btn:hover;
-    }
+.modal__title {
+  @extend %title;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+}
+
+.form__field {
+  display: block;
+  margin-bottom: 10px;
+
+  &:nth-of-type(4) {
+    margin-bottom: 20px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 4px;
+
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+}
+
+.form__wrap {
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding-right: 16px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  transition: border-color $timing $function;
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: $secondary-text-color;
+}
+
+.form__input:focus + .form {
+  fill: $accent-color;
+  transition: fill $timing $function;
+}
+
+.form__textarea {
+  resize: none;
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border $timing $function;
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
+  &::placeholder {
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__checkbox {
+  @extend %visually-hidden;
+}
+
+.form__check-icon {
+  display: inline-block;
+  margin-right: 7px;
+  border: 2px solid #2a2a2a;
+  border-radius: 2px;
+  transition: border-color $timing $function, background-color $timing $function;
+}
+
+.form__field:focus-within .form__check-icon {
+  border-color: $accent-color;
+}
+
+.form__checkbox:checked + .form__check-icon {
+  background-color: $accent-color;
+  background-origin: border-box;
+  border: none;
+}
+
+.form__text {
+  line-height: 1.71;
+  color: $primary-text-color;
+}
+
+.form__link {
+  text-decoration-skip-ink: none;
+  color: $accent-color;
+}
+
+.form__btn {
+  @extend %btn;
+  display: block;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    @extend %btn:hover;
   }
 }
