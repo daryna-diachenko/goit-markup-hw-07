@@ -7,12 +7,12 @@
 
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity $timing $function, visibility $timing $function;
+}
 
-  &--is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -32,12 +32,12 @@
   background-color: $primary-bg-white-color;
 }
 
-.backdrop--is-hidden .modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal__btn {
-  @include centeredFlex();
+  @include centered-flex();
   position: absolute;
   top: 8px;
   right: 8px;
@@ -64,8 +64,8 @@
 .modal__title {
   @extend %title;
   margin-bottom: 12px;
-  font-size: 20px;
-  line-height: 1.15;
+
+  @include font(null, 20px, 1.15, null);
   text-align: center;
 }
 
@@ -93,10 +93,8 @@
   display: block;
   margin-bottom: 4px;
 
+  @include font(null, 12px, 1.17, 0.01em);
   text-align: left;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
   color: $primary-text-color;
 }
 
@@ -157,7 +155,7 @@
 }
 
 .form__checkbox {
-  @extend %visually-hidden;
+  @include visually-hidden;
 }
 
 .form__check-icon {
@@ -189,12 +187,6 @@
 }
 
 .form__btn {
-  @extend %btn;
   display: block;
   margin: 0 auto;
-
-  &:hover,
-  &:focus {
-    @extend %btn:hover;
-  }
 }

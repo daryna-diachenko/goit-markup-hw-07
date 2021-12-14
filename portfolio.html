@@ -11,13 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -28,7 +21,7 @@
 
         <nav class="site-nav">
           <a class="logo" href="./index.html" lang="en"
-            ><span class="logo__accent">Web</span>Studio</a
+            >Web<span class="logo--color-dark">Studio</span></a
           >
 
           <ul class="site-nav__list">
@@ -75,7 +68,7 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="section__title section__title--hidden">Наши роботы</h1>
+          <h1 class="section__title visually-hidden-title">Наши роботы</h1>
           <ul class="filter">
             <li class="filter__item">
               <button class="filter__btn" type="button">Все</button>
@@ -350,9 +343,9 @@
     <footer class="footer" id="footer">
       <div class="container footer__container">
         <div class="footer__contacts">
-          <a class="logo footer__logo" href="./index.html" lang="en">
-            <span class="logo__accent">Web</span>Studio
-          </a>
+          <a class="logo footer__logo" href="./index.html" lang="en"
+            >Web<span class="logo--color-light">Studio</span></a
+          >
           <address class="address">
             <a
               class="address__link"
@@ -395,7 +388,10 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link social__link--color-reverse" href="https://twitter.com/">
+              <a
+                class="social__link social__link--color-reverse"
+                href="https://twitter.com/"
+              >
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
@@ -403,7 +399,10 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link social__link--color-reverse" href="https://www.facebook.com/">
+              <a
+                class="social__link social__link--color-reverse"
+                href="https://www.facebook.com/"
+              >
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
@@ -411,7 +410,10 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link social__link--color-reverse" href="https://www.linkedin.com/">
+              <a
+                class="social__link social__link--color-reverse"
+                href="https://www.linkedin.com/"
+              >
                 <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -437,7 +439,7 @@
               />
             </label>
 
-            <button class="subscription__btn" type="submit">
+            <button class="btn subscription__btn" type="submit">
               Подписаться
               <svg class="subscription__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>

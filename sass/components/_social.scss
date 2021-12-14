@@ -1,5 +1,5 @@
 .social {
-  @include centeredFlex();
+  @include centered-flex();
 }
 
 .social__item:not(:last-child) {
@@ -7,7 +7,7 @@
 }
 
 .social__link {
-  @include centeredFlex();
+  @include centered-flex();
   width: 44px;
   height: 44px;
   border-radius: 50%;

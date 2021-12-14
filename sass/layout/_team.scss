@@ -20,16 +20,15 @@
 
 .team__title {
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+
+  @include font($semibold, 16px, 1.19, null);
   text-align: center;
   color: $secondary-text-color;
 }
 
 .team__description {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
+
+  @include font(null, 16px, 1.19, null);
   text-align: center;
 }

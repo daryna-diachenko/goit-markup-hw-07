@@ -11,7 +11,7 @@
 }
 
 .features__thumb {
-  @include centeredFlex();
+  @include centered-flex();
   min-height: 120px;
   margin-bottom: $card-gap;
   border-radius: 4px;
@@ -21,7 +21,6 @@
 .features__title {
   @extend %title;
   margin-bottom: 10px;
-  line-height: 1.14;
   text-transform: uppercase;
 }
 

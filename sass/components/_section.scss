@@ -7,18 +7,14 @@
   }
 
   &--another-bg-color {
-    afterbackground-color: $secondary-bg-color;
+    background-color: $secondary-bg-color;
   }
 }
 
 .section__title {
   @extend %title;
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
 
-.section__title--hidden {
-  @extend %visually-hidden;
+  @include font(null, 36px, 1.17, null);
+  text-align: center;
 }

@@ -1,5 +1,5 @@
 .subscription__form {
-  @include centeredFlex($cross-axis: flex-end);
+  @include centered-flex();
 }
 
 .subscription__input {
@@ -25,8 +25,7 @@
 }
 
 .subscription__btn {
-  @extend %btn;
-  @include centeredFlex();
+  @include centered-flex();
 }
 
 .subscription__icon {

@@ -1,5 +1,5 @@
 .filter {
-  @include centeredFlex();
+  @include centered-flex();
   margin-bottom: 50px;
 }
 
@@ -10,15 +10,13 @@
 }
 
 .filter__btn {
-  @extend %btn;
   min-width: 73px;
   height: 38px;
+  border: none;
+  border-radius: 4px;
   padding: 6px 22px;
 
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-
+  @include font($semibold, 16px, 1.62, null);
   color: $secondary-text-color;
   background-color: $secondary-bg-color;
   transition: box-shadow $timing $function, color $timing $function,

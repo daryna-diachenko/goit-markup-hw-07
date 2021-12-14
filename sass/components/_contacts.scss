@@ -4,7 +4,7 @@
 }
 
 .contacts__item {
-  @include centeredFlex();
+  @include centered-flex();
 
   &:not(:last-child) {
     margin-right: 50px;
@@ -13,15 +13,12 @@
 
 .contacts__link {
   @extend %link;
-  @include centeredFlex();
+  @include centered-flex();
 
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
+  @include font($semibold, null, null, 0.02em);
   color: $primary-text-color;
   transition: color $timing $function;
 

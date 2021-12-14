@@ -4,7 +4,7 @@
   background-color: $footer-bg-color;
 }
 .footer__container {
-  @include centeredFlex($cross-axis: baseline);
+  @include centered-flex($align: baseline);
 }
 
 .footer__contacts {
@@ -15,7 +15,6 @@
 .footer__logo {
   display: block;
   margin-bottom: 20px;
-  color: $primary-bg-white-color;
 }
 
 .address__link {
@@ -46,8 +45,8 @@
 
 .footer__text {
   margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.14;
+
+  font-weight: $bold;
   text-transform: uppercase;
   color: $primary-bg-white-color;
 }

@@ -11,7 +11,7 @@
 }
 
 .service__label {
-  @include centeredFlex();
+  @include centered-flex();
   position: absolute;
   left: 0;
   bottom: 0;
@@ -22,8 +22,7 @@
 }
 
 .service__description {
-  font-weight: 700;
-  line-height: 1.14;
+  font-weight: $bold;
   text-transform: uppercase;
   color: $primary-bg-white-color;
 }

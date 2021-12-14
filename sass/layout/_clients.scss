@@ -1,6 +1,6 @@
 .clients {
   display: flex;
-  margin-right: calc(-1 * $card-gap);
+  margin-right: calc(-1 * #{$card-gap});
 }
 
 .clients__item {
@@ -8,7 +8,7 @@
 }
 
 .clients__link {
-  @include centeredFlex();
+  @include centered-flex();
   width: 170px;
   height: 92px;
   border: 1px solid $border-color;

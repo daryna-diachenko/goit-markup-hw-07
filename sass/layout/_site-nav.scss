@@ -1,5 +1,5 @@
 .site-nav {
-  @include centeredFlex();
+  @include centered-flex();
 }
 
 .site-nav__list {
@@ -13,10 +13,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
+  @include font($semibold, null, null, 0.02em);
   color: $nav-text-color;
   transition: color $timing $function;
 
