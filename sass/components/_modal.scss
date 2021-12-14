@@ -37,10 +37,10 @@
 }
 
 .modal__btn {
-  @include centered-flex();
   position: absolute;
   top: 8px;
   right: 8px;
+  @include centered-flex();
 
   width: 30px;
   height: 30px;
@@ -127,7 +127,7 @@
   fill: $secondary-text-color;
 }
 
-.form__input:focus + .form {
+.form__input:focus + .form__icon {
   fill: $accent-color;
   transition: fill $timing $function;
 }
